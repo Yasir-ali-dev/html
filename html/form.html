@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        margin: 3px;
+      }
+    </style>
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        console.log(e.target);
+      }
+    </script>
+  </head>
+  <body>
+    <section style="display: flex; flex-direction: column">
+      <form>
+        <input type="text" placeholder="Malaya" readonly value="Malaya" />
+        <input
+          type="text"
+          size="70"
+          placeholder="Enter Text Around Seventy Characters"
+        />
+        <label for="agree">
+          <input type="checkbox" id="agree" />
+          I agree the above terms</label
+        >
+        <fieldset style="display: flex; flex-direction: column">
+          <caption>
+            Gender
+          </caption>
+          <label for="man">
+            <input type="radio" id="man" value="man" name="gender" /> Man
+          </label>
+          <label for="woman">
+            <input type="radio" id="woman" value="woman" name="gender" /> Woman
+          </label>
+          <label for="other">
+            <input type="radio" id="other" value="other" name="gender" /> Other
+          </label>
+        </fieldset>
+        <button type="submit" onsubmit="handleSubmit()">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
