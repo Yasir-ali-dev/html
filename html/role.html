@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav role="banner">
+      <a href="/">Home</a>
+      <a href="/articles">Article</a>
+      <a href="/loading">Loading</a>
+    </nav>
+    <section>
+      <div style="float: left">Some content on the left.</div>
+      <div style="float: right">Some content on the right</div>
+      <div role="presentation" style="clear: both"></div>
+    </section>
+    <div role="alert" aria-live="assertive">
+      Your session will expire in 60 seconds.
+    </div>
+
+    <div role="alertdialog">
+      <h3>Warning</h3>
+      <p>Your session will expire in 60 seconds.</p>
+    </div>
+
+    <div
+      role="application"
+      oninput="result.value=Number(num1.value)+Number(num2.value)"
+    >
+      <h1>Calculator Application</h1>
+      <input id="num1" type="text" /> + <input id="num2" type="text" /> =
+      <output id="result">0</output>
+    </div>
+    <section>
+      <label for="18">
+        <input type="checkbox" role="checkbox" id="18" checked /> Eligible
+      </label>
+      <input type="button" role="button" value="BUTTON" />
+      <input type="text" role="combobox" aria-expanded="false" />
+    </section>
+
+    <table>
+      <thead>
+        <tr>
+          <th role="columnheader">agreed</th>
+          <th role="columnheader">Not agreed</th>
+          <th role="columnheader">Withdrawn</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td role="cell ">95</td>
+        <td role="cell">14</td>
+        <td role="cell">25</td>
+      </tbody>
+    </table>
+    <div role="complementary">
+      <h3 role="heading">More articles</h3>
+      <ul>
+        ..
+      </ul>
+      ...
+    </div>
+
+    <section>
+      <div role="contentinfo">
+        <p>Author: Albert Einstein</p>
+        all reserved;
+      </div>
+
+      <span role="term">All Is Well</span>
+      <span role="definition">
+        All will be okay not worry about it, Don't Panic</span
+      >
+
+      <div role="dialog">
+        <p>Are you sure?</p>
+        <button role="button">Yes</button>
+        <button role="button">No</button>
+      </div>
+
+      <ul role="directory">
+        <li><a href="/chapter-1">Chapter 1</a></li>
+        <li><a href="/chapter-2">Chapter 2</a></li>
+        <li><a href="/chapter-3">Chapter 3</a></li>
+      </ul>
+
+      <div role="document">
+        <h3>The Prisoner's of Azkaban</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+          deleniti consequatur obcaecati deserunt ad sint nihil ....
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div role="form">
+        <input type="email" placeholder="Your email address" />
+        <button>Sign up</button>
+      </div>
+    </section>
+
+    <section>
+      <table role="grid">
+        <thead role="rowgroup">
+          <tr role="rowheader">
+            <th role="gridcell">Name</th>
+            <th role="gridcell">Job</th>
+            <th role="gridcell">Age</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <figure role="img">
+      <img src="/assets/small.jpg" role="link" width="200px" height="250px" />
+      <figcaption>Amazing Village</figcaption>
+    </figure>
+    <ul role="list">
+      <li role="listitem">apple</li>
+      <li role="listitem">mango</li>
+      <li role="listitem">banana</li>
+    </ul>
+
+    <ul role="menu">
+      <li role="menuitem">Chicken Burger</li>
+      <li role="menuitem">Pizza</li>
+      <li role="menuitemcheckbox" aria-checked="true">Fries</li>
+    </ul>
+
+    <nav role="navigation">
+      <a href="/">Home</a>
+      <a href="/">Contact</a>
+      <a href="/">Stories</a>
+    </nav>
+
+    <ul role="listbox">
+      <li role="option">option-1</li>
+      <li role="option">option-2</li>
+      <li role="option">option-3</li>
+    </ul>
+    <section role="region">Home Team: 3, Away Team: 5,</section>
+
+    <div role="radiogroup">
+      <input type="radio" name="gender" area-checked="true" role="radio" />
+      <input type="radio" name="gender" role="radio" />
+    </div>
+    <hr role="separator" />
+    <div id="content1">Lorem ipsum...</div>
+    <div
+      role="scrollbar"
+      aria-orientation="vertical"
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="25"
+    ></div>
+
+    <div role="search">
+      <input type="search" role="searchbox" />
+      <button role="button">Submit</button>
+    </div>
+
+    <input
+      role="spinbutton"
+      aria-valuemax="100"
+      aria-valuemin="0"
+      aria-valuenow="25"
+      type="number"
+      value="25"
+    />
+
+    <div role="status">online</div>
+
+    <select role="switch">
+      <option value="on" role="option">ON</option>
+      <option value="off" role="option">OFF</option>
+    </select>
+    <p>the remaining time <span role="timer">60</span> seconds</p>
+
+    <ul role="toolbar">
+      <a><img src="/assets/edit.svg" alt="" width="40px" /></a>
+      <a>
+        <img
+          src="/assets/edit.svg"
+          alt=""
+          width="40px"
+          style="background-color: blue"
+        />
+      </a>
+    </ul>
+
+    <ul role="tree">
+      <li>
+        Fruit
+        <ul>
+          <li role="treeitem">Mango</li>
+          <li role="treeitem">Orange</li>
+          <li role="treeitem">Banana</li>
+        </ul>
+      </li>
+      <li>
+        Vegetables
+        <ul>
+          <li role="treeitem">Potato</li>
+          <li role="treeitem">Onion</li>
+          <li role="treeitem">Loop</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
