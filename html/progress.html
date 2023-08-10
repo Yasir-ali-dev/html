@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      progress[value] {
+        height: 20px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="progress">Marks </label>
+    <progress max="100" id="progress" value="20"></progress>
+
+    <progress max="100" id="progress" value="20">
+      <div class="progress-bar">
+        <span style="width: 90%"> Progress 20%</span>
+      </div>
+    </progress>
+
+    <select name="Age" id="age" size="1">
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+    </select>
+
+    <select name="Age-pre" id="age" size="1" multiple>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+    </select>
+
+    <select name="Fruits">
+      <option value="apple" label="Apple"></option>
+      <option value="mango" label="Mango"></option>
+      <option value="orange" selected label="Orange"></option>
+    </select>
+
+    <select name="shopping" multiple>
+      <option value="milk" selected label="Milk"></option>
+      <optgroup label="fruits">
+        <option value="apple" label="Apple" id="fruits"></option>
+        <option value="mango" label="Mango" id="fruits"></option>
+        <option value="orange" selected label="Orange" id="fruits"></option>
+      </optgroup>
+      <optgroup label="Vegetables" disabled>
+        <option value="onion" label="Onion"></option>
+        <option value="potato" label="Potato"></option>
+        <option value="lady finger" label="Lady Finger"></option>
+      </optgroup>
+    </select>
+
+    <input list="Languages" />
+    <datalist id="Languages">
+      <option value="PHP"></option>
+      <option value="Perl"></option>
+      <option value="Python"></option>
+      <option value="Ruby"></option>
+      <option value="C+"></option>
+    </datalist>
+
+    <label for="country">Choose Your Country </label>
+    <input type="text" id="country" list="Countries" />
+    <datalist id="Countries">
+      <option value="India"></option>
+      <option value="California"></option>
+      <option value="France"></option>
+      <option value="Canada"></option>
+      <option value="Austrailia"></option>
+    </datalist>
+
+    <!-- <embed
+      src="/assets/94bf5c46f18ccabc5d795e697af5d6ce.mp4"
+      type="video/mp4"
+      width="300px"
+      height="200px"
+    /> -->
+
+    <embed
+      src="https://www.youtube.com/watch?v=Gp1RNYBckBs&list=RDMMGp1RNYBckBs&index=1"
+      type="video/mp4"
+      height="300px"
+      width="400px"
+    />
+  </body>
+</html>

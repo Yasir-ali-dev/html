@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>svg</title>
+    <style>
+        .attention {
+            fill: red;
+            width: 50px;
+            height: 50px;
+        }
+        .exclam{
+            width: 150px;
+            height: 150px;
+        }
+        .image{
+            height: 30px;
+            width: 100px;
+            background-image: url("assets/exclamation.svg");
+            background-size: 100% 100%;
+        } 
+    </style>
+  </head>
+  <body>
+    <p lang="en">This is an English language Paragraph</p>
+    <div lang="en">
+      <p title="The value of this attribute is also in English."></p>This is an inhereted english language paragraph</p>
+    </div>
+
+    <p lang="en">
+      This word belong to the <span lang="de">Hallo!</span> to the German
+      language
+    </p>
+    <p lang="en">This English sentence contains the German word <span lang="de">Hallo</span>.</p>
+    <p lang="de"><a href="https://germanlang.com">german</a> policia</p>
+    
+    <p lang="en" title="An English paragraph">
+        <span lang="de" title="A German sentence">Hallo Welt! </span>
+        How are you doing
+    </p>
+    <section style="display: flex; flex-direction: row;">     
+            <!-- inline svg -->
+        <svg class="attention" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" >
+            <path id="attention"
+            d="m571,767l0,-106q0,-8,-5,-13t-12,-5l-108,0q-7,0,-12,5t-5,13l0,106q0,8,5,13t12,6l108,0q7,0,12,-6t5
+            ,-13Zm-1,-208l10,-257q0,-6,-5,-10q-7,-6,-14,-6l-122,0q-7,0,-14,6q-5,4,-5,12l9,255q0,5,6,9t13,3l103,
+            0q8,0,13,-3t6,-9Zm-7,-522l428,786q20,35,-1,70q-10,17,-26,26t-35,10l-858,0q-18,0,-35,-10t-26,-26q-21
+            ,-35,-1,-70l429,-786q9,-17,26,-27t36,-10t36,10t27,27Z" />
+        </svg>
+        
+        <img src="/assets/exclamation.svg" alt="exclamation svg" width="60px">
+        <object data="/assets//exclamation.svg" class="exclam"></object>
+        
+        <div class="image">
+        </div>
+    </section>
+
+    <canvas id="myCanvas" width="300" height="200">
+        Hey there, Canvas is great.
+    </canvas>
+
+    <section>
+        <pre>
+            <code>
+            let x=0;
+            if (x => 10){
+                return "Commited";
+            }
+            </code>
+        </pre>
+
+        <pre>
+            <code>
+            x = 42
+            if x == 42:
+                print "x is … … 42"
+            </code>
+        </pre>
+
+        <pre>
+            <code>
+            &lt;p>This is a paragraph.&lt;/p>
+            </code>
+        </pre>
+
+        <p>This is an <code>a</code> hyperlink element</p>
+    </section>
+
+
+
+
+
+
+
+
+    <script  async>
+        const ctx=document.getElementById("myCanvas").getContext("2d");
+        ctx.fillStyle = "#aaa";
+        ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height); // x, y, width, height
+
+        ctx.fillStyle = "#000";
+        ctx.fillText("My red canvas with some black text", 24, 32); // text, x, y
+
+
+        window.onload = init; // call init() once the window is completely loaded
+        function init(){
+        // #1 - get reference to <canvas> element
+        var canvas = document.querySelector('canvas');
+        // #2 - get reference to the drawing context and drawing API
+        var ctx = canvas.getContext('2d');
+        // #3 - all fill operations are now in red
+        ctx.fillStyle = 'red';
+
+        ctx.fillRect(0,0,100,100);
+        // #5 - all fill operations are now in green
+        ctx.fillStyle = 'green';
+        // #6 - fill a 50x50 rectangle at x=25,y=25
+        ctx.fillRect(25,25,50,50);
+        }
+    </script>
+</body>
+
+</html>
