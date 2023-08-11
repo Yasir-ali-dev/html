@@ -1,0 +1,32 @@
+.padded{
+    font-size: 16px;
+    padding: 2em;   
+}
+
+.box {
+    padding: 1em;
+    border-radius: 1em;
+    background-color: lightgray;
+}
+
+.box-small {
+    font-size: 10px;
+}
+
+.box-large {
+    font-size: 13px;
+}
+
+body {
+    font-size: 16px;
+}
+
+ul {
+    font-size: 1.2em;
+}
+
+.slogan {
+    background-color: gainsboro;
+    font-size: 1.2em; /*19.2 em*/
+    padding: 1.2em;  /*23.2 px*/
+}

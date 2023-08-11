@@ -1,0 +1,26 @@
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+li{
+    list-style-type:lower-greek;
+    list-style-position: inside;
+    /* list-style: none; */
+    /* list-style-image: url("/assets/1.png"); */
+}
+
+
+span{
+    text-shadow: rgb(147, 202, 253) 0 0 3px, rgb(9, 0, 128) 4px 4px 10px;
+}
+
+p{
+    width: 40px;
+    height:10px;
+}
+div p, span{
+ 
+    background-color:  blueviolet;
+}
