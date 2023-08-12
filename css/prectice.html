@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      :root {
+        --bg-color: white;
+        --text-color: black;
+        font-size: calc(0.45em + 1vw);
+      }
+      .panel {
+        padding: 0.5em;
+        border: 1px solid grey;
+        margin: 0.2em;
+        font-size: 1rem;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+      .panel > h3 {
+        font-size: 1.2em;
+      }
+      .dark {
+        --bg-color: grey;
+        --text-color: white;
+        border: 1px solid grey;
+        margin: 0.2em;
+      }
+      .dark .panel {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis est labore
+        recusandae. A consectetur aliquam voluptates consequatur vel.
+        Cupiditate, accusamus qui inventore eum voluptas molestiae tempora!
+        Architecto labore ducimus maiores?
+      </p>
+    </div>
+    <aside class="dark">
+      <div class="panel">
+        <h3>Hella Eka</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis est
+          labore recusandae. A consectetur aliquam voluptates consequatur vel.
+          Cupiditate, accusamus qui inventore eum voluptas molestiae tempora!
+          Architecto labore ducimus maiores?
+        </p>
+      </div>
+    </aside>
+    <script async>
+      const rootElement = document.documentElement;
+      const styles = getComputedStyle(rootElement);
+      const mainColor = styles.getPropertyValue("--bg-color");
+      console.log(String(mainColor).trim());
+    </script>
+  </body>
+</html>

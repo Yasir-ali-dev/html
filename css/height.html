@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* p {
+        height: 40px;
+        border: 2px solid rgb(49, 48, 48);
+        overflow: auto;
+      } */
+
+      :root {
+        box-sizing: border-box;
+      }
+
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+      }
+
+      body {
+        background-color: #eee;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      header {
+        color: #fff;
+        background-color: #0072b0;
+        border-radius: 0.2em;
+      }
+
+      .container {
+        display: table;
+        width: 100%;
+        border-spacing: 1.5em 0;
+      }
+      .main {
+        display: table-cell;
+        width: 70%;
+        background-color: #fff;
+        border-radius: 0.5em;
+      }
+      .sidebar {
+        display: table-cell;
+        width: 30%;
+        padding: 1.5em;
+        background-color: #fff;
+        border-radius: 0.5em;
+      }
+      .wrapper {
+        margin: 0 -1.5em;
+      }
+
+      .para {
+        border: 2px solid slateblue;
+        min-height: 3em;
+      }
+      .button-link {
+        display: block;
+        padding: 0.5em;
+        color: #fff;
+        background-color: #0090c9;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .button-link + .button-link {
+        margin-top: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Franklin Running Club</h1>
+    </header>
+    <div class="wrapper">
+      <div class="container">
+        <main class="main">
+          <h2>Come join us!</h2>
+          <p>
+            The Franklin Running club meets at 6:00pm every Thursday at the town
+            square. Runs are three to five miles, at your own pace.
+          </p>
+        </main>
+        <aside class="sidebar">
+          <a href="/twitter" class="button-link"> follow us on Twitter </a>
+          <a href="/facebook" class="button-link"> like us on Facebook </a>
+        </aside>
+      </div>
+    </div>
+    <!-- 
+    <p>
+      Be judicious with the use of scrollbars. Browsers insert a scrollbar for
+      scrolling the page, and adding nested scrollable areas inside your page
+      can be frustrating to users. If a user is using a mouse scroll wheel to
+      scroll down the page, and their cursor reaches a smaller scrollable area,
+      their scroll wheel will stop scrolling the page and will scroll the
+      smaller box instead.
+    </p> -->
+
+    <!-- <p class="para">
+      with the use of scrollbars. Browsers insert a scrollbar for scrollinir
+      scroll wheel will stop scrolling ; the use of scrollbars. Browsers inse
+    </p> -->
+  </body>
+</html>

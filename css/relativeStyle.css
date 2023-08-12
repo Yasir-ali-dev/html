@@ -1,3 +1,6 @@
+:root{
+    font-size: 0.0875em;
+}
 .padded{
     font-size: 16px;
     padding: 2em;   
@@ -22,7 +25,7 @@ body {
 }
 
 ul {
-    font-size: 1.2em;
+    font-size: 0.8rem;
 }
 
 .slogan {
@@ -30,3 +33,4 @@ ul {
     font-size: 1.2em; /*19.2 em*/
     padding: 1.2em;  /*23.2 px*/
 }
+
