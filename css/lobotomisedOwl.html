@@ -5,22 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /* p {
-        height: 40px;
-        border: 2px solid rgb(49, 48, 48);
-        overflow: auto;
-      } */
-
       :root {
         box-sizing: border-box;
       }
-
       *,
-      ::after,
-      ::before {
+      ::before,
+      ::after {
         box-sizing: inherit;
       }
-
       body {
         background-color: #eee;
         font-family: Helvetica, Arial, sans-serif;
@@ -28,40 +20,30 @@
       body * + * {
         margin-top: 1.5em;
       }
-
       header {
+        padding: 1em 1.5em;
         color: #fff;
         background-color: #0072b0;
-        border-radius: 0.2em;
+        border-radius: 0.5em;
       }
-
       .container {
-        display: table;
-        width: 100%;
-        border-spacing: 1.5em 0;
+        display: flex;
       }
-
       .main {
-        display: table-cell;
         width: 70%;
+        padding: 1em 1.5em;
         background-color: #fff;
         border-radius: 0.5em;
       }
       .sidebar {
-        display: table-cell;
         width: 30%;
         padding: 1.5em;
+        margin-top: 0;
+        margin-left: 1.5em;
         background-color: #fff;
         border-radius: 0.5em;
       }
-      .wrapper {
-        margin: 0 -1.5em;
-      }
 
-      .para {
-        border: 2px solid slateblue;
-        min-height: 3em;
-      }
       .button-link {
         display: block;
         padding: 0.5em;
@@ -70,9 +52,6 @@
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
-      }
-      .button-link + .button-link {
-        margin-top: 1.5em;
       }
       .sponsor-link {
         display: block;
@@ -103,19 +82,5 @@
         </aside>
       </div>
     </div>
-    <!-- 
-    <p>
-      Be judicious with the use of scrollbars. Browsers insert a scrollbar for
-      scrolling the page, and adding nested scrollable areas inside your page
-      can be frustrating to users. If a user is using a mouse scroll wheel to
-      scroll down the page, and their cursor reaches a smaller scrollable area,
-      their scroll wheel will stop scrolling the page and will scroll the
-      smaller box instead.
-    </p> -->
-
-    <!-- <p class="para">
-      with the use of scrollbars. Browsers insert a scrollbar for scrollinir
-      scroll wheel will stop scrolling ; the use of scrollbars. Browsers inse
-    </p> -->
   </body>
 </html>
