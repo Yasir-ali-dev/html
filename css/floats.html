@@ -36,6 +36,26 @@
         background-color: #fff;
         border-radius: 0.5em;
       }
+      .media {
+        float: left;
+        margin: 0 1.5em 1.5em 0;
+        width: calc(50% - 1.5em);
+        padding: 1.5em;
+        background-color: #eee;
+        border-radius: 0.5em;
+      }
+      .clearfix::after,
+      .clearfix::before {
+        content: " ";
+        display: table;
+      }
+
+      .clearfix::after {
+        clear: both;
+      }
+      .media:nth-child(odd) {
+        clear: left;
+      }
     </style>
   </head>
   <body>
@@ -46,7 +66,6 @@
 
       <main class="main clearfix">
         <h2>Running tips</h2>
-
         <div>
           <div class="media">
             <img class="media-image" src="/assets/Schuhe-coloured.svg" />

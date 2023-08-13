@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flexContainer {
+        display: flex;
+      }
+      .items {
+        background-color: gainsboro;
+        flex-basis: 20%;
+        flex-grow: 1;
+      }
+      .rem-item {
+        background-color: rgb(105, 32, 32);
+        flex-basis: 30%;
+        flex-grow: 0;
+      }
+      .flexContainer > div + div {
+        margin-left: 1.5em;
+      }
+      .container {
+        display: flex;
+      }
+      .item {
+        background-color: rgb(117, 186, 243);
+        flex-basis: 20%;
+      }
+      .item-1,
+      .item-3 {
+        flex-basis: 20%;
+      }
+      .item-2 {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexContainer">
+      <div class="items">flex basis 20%</div>
+      <div class="items">flex basis 20%</div>
+      <div class="items">flex basis 20%</div>
+      <div class="rem-item">remaining</div>
+    </div>
+
+    <div class="container">
+      <div class="item item-1">flex basis 20 with flex-grow 1</div>
+      <div class="item item-2">flex basis 20 with flex-grow 0</div>
+      <div class="item item-3">flex basis 20 with flex-grow 1</div>
+    </div>
+  </body>
+</html>
