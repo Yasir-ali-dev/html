@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: calc(0.6em + 1vw);
+      }
+      .container {
+        display: grid;
+      }
+      .item {
+        background-color: aqua;
+        padding: 1em 0;
+      }
+      .container > .item + .item {
+        margin-top: 0.5em;
+      }
+      .explicitContainer {
+        display: grid;
+        grid-template-rows: 100px 70px;
+        grid-row-gap: 0.3em;
+      }
+      .explicitContainer div {
+        background-color: blue;
+      }
+
+      .explicitContainerColumn {
+        display: grid;
+        grid-template-columns: 50px 50px 100px;
+        grid-column-gap: 0.3em;
+        grid-row-gap: 0.2em;
+      }
+
+      .explicitContainerColumn div {
+        background-color: rgb(255, 0, 255);
+      }
+
+      .flexibleGrid {
+        display: grid;
+        grid-row-gap: 0.1em;
+        grid-column-gap: 0.2em;
+        grid-template-columns: 1fr repeat(2, 30px) 2fr;
+      }
+
+      .flexibleGrid div {
+        background-color: aqua;
+      }
+
+      .mixFlexibleGrid {
+        display: grid;
+        grid-template-columns: 3rem 20% 1fr 2fr;
+        grid-column-gap: 0.2em;
+      }
+      .mixFlexibleGrid > div {
+        background-color: blueviolet;
+      }
+
+      .minmaxContainer {
+        display: grid;
+        grid-template-rows: minmax(100px, auto); /*(min,max)*/
+        grid-template-columns: minmax(100px, auto) 1fr 25%;
+        grid-gap: 0.2em;
+      }
+      .minmaxContainer > div {
+        background-color: blanchedalmond;
+      }
+
+      .repeatContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 10vh);
+        grid-gap: 0.2em;
+      }
+      .repeatContainer > div {
+        background-color: coral;
+      }
+      .positionWithGridLine {
+        display: grid;
+        grid-template-rows: minmax(100px, auto); /*(min,max)*/
+        grid-template-columns: minmax(100px, auto) 1fr 25%;
+        grid-gap: 0.2em;
+      }
+      .pos {
+        /* grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 3; */
+        grid-row: 2/3;
+        grid-column: 3/4;
+      }
+      .positionWithGridLine > div {
+        background-color: beige;
+        text-align: center;
+      }
+      .span {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.2em;
+      }
+      .column {
+        grid-column: 1/4;
+      }
+      .span > div {
+        background-color: aqua;
+      }
+
+      .spanRow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0.2em;
+      }
+      .spanRow > div {
+        background-color: firebrick;
+      }
+      .rowSpan {
+        grid-row: 1/5;
+        grid-column: 3/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2nd is the best</div>
+      <div class="item">1</div>
+    </div>
+
+    <div class="explicitContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+
+    <div class="explicitContainerColumn">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+
+    <div class="flexibleGrid">
+      <div>1</div>
+      <div>2</div>
+      <div>4</div>
+      <div>1</div>
+      <div>2</div>
+      <div>4</div>
+      <div>2</div>
+      <div>4</div>
+    </div>
+
+    <div class="mixFlexibleGrid">
+      <div>1</div>
+      <div>2</div>
+      <div>4</div>
+      <div>4</div>
+    </div>
+
+    <div class="minmaxContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laudantium
+        suscipit eveniet, aspernatur eos veniam voluptas laborum sed itaque
+        magni tempora praesentium inventore pariatur, odit vitae deserunt in
+        sequi quisquam? Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Eum molestiae, aliquid accusantium earum cumque ratione neque ab
+        molestias delectus cupiditate quibusdam debitis sed, praesentium rerum?
+        Architecto qui iste itaque aliquid!
+      </div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+
+    <div class="repeatContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>3</div>
+    </div>
+
+    <div class="positionWithGridLine">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="pos">4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+
+    <div class="span">
+      <div class="column">1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <div class="spanRow">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="rowSpan">4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </body>
+</html>
