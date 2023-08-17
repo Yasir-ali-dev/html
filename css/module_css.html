@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin: 0;
+      }
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+      }
+
+      .message {
+        padding: 0.8em 1.2em;
+        border-radius: 0.2em;
+        border: 1px solid #265559;
+        color: #265559;
+        background-color: #e0f0f2;
+      }
+      .message--success {
+        color: #2f5926;
+        border-color: #2f5926;
+        background-color: #cfe8c9;
+      }
+      .message--warning {
+        color: #594826;
+        border-color: #594826;
+        background-color: #e8dec9;
+      }
+      .message--error {
+        color: #59262f;
+        border-color: #59262f;
+        background-color: #e8c9cf;
+      }
+
+      .button {
+        padding: 0.5em 0.8em;
+        border: 1px solid #265559;
+        border-radius: 0.2em;
+        background-color: transparent;
+        font-size: 1rem;
+      }
+      .button--success {
+        border: 1px solid rgb(138, 138, 21);
+        color: white;
+        background-color: rgb(177, 177, 33);
+      }
+      .button--error {
+        border: 1px solid red;
+        color: white;
+        background-color: rgb(250, 150, 150);
+      }
+      .button--small {
+        font-size: 0.8em;
+      }
+      .button--large {
+        font-size: 1.2em;
+      }
+      .media {
+        padding: 1.5em;
+        background-color: #eee;
+        border-radius: 0.5em;
+      }
+      .media::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .media__image {
+        float: right;
+        margin-left: 1.5em;
+      }
+      .media__body {
+        overflow: auto;
+        margin-top: 0;
+      }
+      .media__body > h4 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message">Save successful</div>
+    <div class="message message--error">Save Error</div>
+    <div class="message message--success">Save Warning</div>
+
+    <button class="button button--error button--small">Error</button>
+    <button class="button button--large">Submit</button>
+    <button class="button button--success">Success</button>
+
+    <div class="media">
+      <img class="media__image" src="/assets/Schuhe-coloured.svg" />
+      <div class="media__body">
+        <h4>Strength</h4>
+        <p>
+          Strength training is an important part of injury prevention. Focus on
+          your core&mdash; especially your abs and glutes.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
