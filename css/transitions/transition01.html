@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: hsl(180, 50%, 50%);
+        border: 0;
+        color: white;
+        font-size: 1rem;
+        padding: 0.3em 1em;
+        /* transition-property: all;
+        transition-duration: 1s; */
+        transition: border-radius 0.5s linear, background-color 1s ease;
+      }
+      button:hover {
+        background-color: hsl(0, 50%, 50%);
+        border-radius: 0.3em;
+      }
+      .container {
+        position: relative;
+        height: 30px;
+      }
+      .box {
+        position: absolute;
+        left: 0;
+        height: 30px;
+        width: 30px;
+        background-color: hsl(130, 50%, 50%);
+        /* transition: all 1s cubic-bezier(0.71, 0.22, 0.13, 0.81); */
+        transition: all 1s steps(9, start);
+      }
+      .container:hover .box {
+        left: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Hover over me</button>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

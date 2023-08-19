@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .button {
+        padding: 0.8em;
+        border: 0;
+        font-size: 1rem;
+        color: white;
+        border-radius: 0.5em;
+        background-color: #57b;
+        box-shadow: 0 0.45em #148;
+        text-shadow: 2px 2px rgb(53, 17, 136);
+      }
+      .button:active {
+        background-color: #456ab5;
+        transform: translateY(0.3em);
+        box-shadow: 0 0.3em #148;
+      }
+      .button--warning {
+        background-color: orange;
+        box-shadow: 0 0.4em rgb(201, 131, 2);
+        text-shadow: 2px 2px rgb(160, 110, 17);
+      }
+      .button--warning:active {
+        background-color: rgb(233, 160, 26);
+        box-shadow: 0 0.4em rgb(126, 83, 5);
+        transform: translateY(0.4em);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Add Cart</button>
+    <button class="button button--warning">Add To Cart</button>
+  </body>
+</html>
