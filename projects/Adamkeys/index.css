@@ -1,0 +1,179 @@
+:root{
+    box-sizing: border-box;
+    font-size: calc(1vw + .5rem);
+    color: white;
+}
+
+*,
+::after,
+::before{
+    margin: 0;
+    box-sizing: inherit;
+    --font-color: "white";
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    background-color: #3b3b3b;
+}
+.header{
+    position: relative;
+    height: 100vh;
+    margin-bottom: 3em;
+}
+.menu{
+    position: sticky;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding: 1em 0.2em 0.4em;
+    background-color: transparent;
+    z-index: 1;
+}
+.logo > li >a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+}
+.social{
+    display: flex;
+    gap: .5em;
+}
+
+.social > li >a{
+    background-color: white;
+    padding: 0.5em 0.2em 0;
+    border-radius: 1.7em;
+    box-shadow: 3px 2px 1px rgb(121, 121, 121);
+}
+.grid{
+    top: 0;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 100vh;
+}
+.profile{   
+    background-image: url("https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg");
+    width: 100%;
+    box-shadow: -3px 2px 3px rgb(49, 49, 49);
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile_info{
+    align-self:center;
+    color: white;
+    padding-right: .5em;
+    padding-left: 0.3em;
+
+}
+.profile_info > *{
+    margin-bottom: .67em;
+}
+.profile_info > h1 {
+    text-shadow: 4px 7px 5px black;
+    font-size: 3.2em;
+    overflow-x:visible;
+}
+.profile_info > h1 > span{
+    border-bottom: 4px solid dodgerblue;
+}
+
+
+.btn{
+    border: none;
+    letter-spacing: 0.5ch;
+    padding: 0.2em 0.5em;
+    font-size: .91em;
+    margin-top: 1.9em;
+    background-color: transparent;
+    border-bottom: 2px solid dodgerblue;
+    color: white;
+    font-weight: 600;
+    transition: hover 0.3s;
+    cursor: pointer;
+}
+.btn:hover{
+  box-shadow: 3px 3px 3px black;  
+  text-shadow: 3px 3px 3px black;
+  border-radius: -0.3em;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+   justify-items: flex-start;
+   padding: 1em 0.5em; 
+   margin-bottom: 1em;
+}
+
+.skill{
+    margin: 1.5em 0.2em;
+    padding: 0.2em 0.2em;
+    line-height: 1.55;
+}
+.skill > p{
+    font-size: .9em;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2 , 50%);
+    grid-template-rows: 7em repeat(3,1fr);
+    padding-bottom: 2em;
+        margin-bottom: 1.35em;
+}
+.heading{
+    grid-row: span 1;
+    grid-column: 1/3 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.23em .2em;
+
+}
+.heading > h1{
+    font-size: 2.5em;
+    text-shadow: 2px 2px 3px black;
+}
+.heading > .btn {
+    margin-top: 0;
+}
+
+.media {
+    padding: 0.5em 0.2em ;
+    display: flex;
+    flex-direction: column;
+}
+.media > img{
+    width: 100%;
+    height: 100%;
+    border-radius: .13em;
+    box-shadow: 4px 5px 3px black;
+    transition: hover .24s;
+}
+
+.media > img:hover{
+    transform: translateY(-.25em);
+    box-shadow: 7px 10px 5px black;
+}
+
+.media_information{
+    text-transform: uppercase;
+    padding: 0.2em 0.2em;
+}
+.media_information > p{
+    word-spacing: 1.5ch;
+}
+
+.contact{
+    background-color: aqua;
+}
