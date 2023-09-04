@@ -1,0 +1,166 @@
+:root{
+    font-size: calc(1vw + .45rem);
+    box-sizing: border-box;
+    --color-main : 
+    #43EBC2;
+}
+
+*,
+::after,
+::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    display: flex;
+    padding: 0.3em 0.2em;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+}
+
+
+.nav-links{
+    margin-left: auto;
+    display: flex;
+    column-gap: 2em;
+}
+
+.nav-links > li > a{
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+.logo >  img{
+    width: 4em;
+}
+
+
+.hero-section{
+    display: flex;
+    background-color: var(--color-main);
+    padding: 2.7em 1em;
+}
+
+.main-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+.main-img > img{
+    transform: scale(1.5);
+}
+
+.main-info{
+    color: white;
+    flex: 1;
+}
+.main-info > h1{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.main-info > p{
+    font-size: 1.1em;
+    word-spacing: 7px;    
+}
+.btn{
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-size: 1.33em;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+
+.main-info > * + * {
+    margin-bottom: .7em;
+}
+
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 2em 0;
+}
+
+.product-item{
+    display: flex;
+}
+.product-img > img{
+    width: 8em;
+}
+.product-info > *{
+    margin-bottom: .7em;
+}
+
+
+.product-info > h2{
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.btn-contained{
+    background-color: var(--color-main);
+    border:none;
+    color: white;
+    font-size: 1.33em;
+    border-radius: 0.3em;
+    padding: 0.3em;
+    box-shadow:    2px 8px 7px grey;
+}
+.feature-products{
+    text-transform: uppercase;
+    color: white;
+    padding: 0.4em 1.5em;
+    font-weight: 500;
+    background-color: var(--color-main);
+}
+
+.all-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    padding: 2em 0;
+    grid-gap: 5em 1em;
+}
+
+.all-products .product-item{
+    justify-self: center;
+}
+
+.trending{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: var(--color-main);
+    padding: 2em 0em;
+}
+
+.trending-item > ul > li{
+    list-style: none;
+    font-size: 1.5em;
+    font-family: cursive;
+}
+
+.trending-item > h1{
+    font-size: 2.2em;
+    font-weight: 600;
+}

@@ -11,21 +11,23 @@
       <header>
         <nav class="navbar">
           <div class="logo">
-            <img src="./assets/download.png" alt="logo" />
+            <a href="#home">
+              <img src="./assets/download.png" alt="logo" />
+            </a>
           </div>
-          <a href="#">Products</a>
-          <a href="$">Designs</a>
-          <a href="#">Favourites</a>
-          <a href="@" style="margin-left: auto; margin-right: 0.7em"
+          <a href="#products">Products</a>
+          <a href="#contact">Contact US</a>
+          <a href="#cart">Cart</a>
+          <a href="#check-out" style="margin-left: auto; margin-right: 0.7em"
             >CheckOut</a
           >
         </nav>
       </header>
-      <div class="hero-section">
+      <div class="hero-section" id="home">
         <img src="./assets//background-image.png" alt="background-image" />
       </div>
 
-      <section class="products">
+      <section class="products" id="products">
         <h2 class="title">Products</h2>
         <div class="product-items">
           <div class="item">
@@ -48,8 +50,9 @@
           </div>
         </div>
       </section>
-      <div class="cart">
+      <div class="cart" id="cart">
         <h1 class="title">Cart</h1>
+
         <div class="cart-container">
           <div class="cart-img-container">
             <img src="./assets/singleProd.png" alt="single_img" />
@@ -67,7 +70,7 @@
         </div>
       </div>
 
-      <div class="check-out">
+      <div class="check-out" id="check-out">
         <h2 class="title">Check Out</h2>
         <form class="check-out-form">
           <input type="text" readonly placeholder="Enter Card Number..." />
@@ -75,6 +78,30 @@
           <button class="btn">Shop!</button>
         </form>
       </div>
+
+      <div class="contact-us">
+        <div class="contact" id="contact">
+          <h2>Our New Products</h2>
+          <p>Designing</p>
+          <p>Products</p>
+          <p>Blog</p>
+        </div>
+        <div class="contact">
+          <h2>Contact Us</h2>
+          <p>ecomerce.gmail.site</p>
+          <p>022-322-233-21</p>
+          <p>http://linkedinn.com</p>
+        </div>
+        <div class="contact">
+          <h2>Generals Home Products</h2>
+          <p>Kitchen Stuff</p>
+          <p>Electronics</p>
+          <p>Home Products</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>All Rights reserved @Enterprise E-commerse Site</p>
+      </footer>
     </div>
   </body>
 </html>
